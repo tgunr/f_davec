@@ -3,7 +3,7 @@
 USING: accessors assocs classes.tuple io io.backend io.directories
 io.files io.files.info io.files.links io.files.private io.files.types
 io.pathnames kernel locals math math.parser multiline namespaces
-prettyprint sequences strings.parser tools.continuations vocabs.parser
+prettyprint sequences strings.parser tools.continuations vocabs.parser editors.emacs
 ;
 
 IN: vocabs
@@ -22,6 +22,8 @@ IN: prettyprint.config
 
 IN: syntax
 SYNTAX: ." parse-string write ;
+
+"/Applications/Aquamacs.app/Contents/MacOS/bin/emacsclient" emacsclient-path set-global
 
 IN: davec
 "davec: loaded" print
