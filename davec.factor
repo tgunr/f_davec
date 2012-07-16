@@ -1,10 +1,7 @@
 ! Copyright (C) 2011 PolyMicro Systems
 ! See http://factorcode.org/license.txt for BSD license.
-USING: accessors assocs classes.tuple io io.backend io.directories
-io.files io.files.info io.files.links io.files.private io.files.types
-io.pathnames kernel locals math math.parser multiline namespaces
-prettyprint sequences strings.parser tools.continuations vocabs.parser editors.emacs
-;
+USING: accessors assocs editors.emacs math io kernel namespaces prettyprint
+sequences strings.parser vocabs.parser ui.tools.listener ;
 
 IN: vocabs
 : current-vocab-str ( -- str )
