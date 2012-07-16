@@ -15,8 +15,8 @@ IN: prettyprint.config
     16 number-base set ;
 
 : decimal ( -- )
-    10 number-base set ;
-
+    10 number-base set ;    
+    
 IN: syntax
 SYNTAX: ." parse-string write ;
 
