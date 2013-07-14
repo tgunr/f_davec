@@ -22,6 +22,4 @@ SYNTAX: ." parse-string write ;
 
 "/Applications/Aquamacs.app/Contents/MacOS/bin/emacsclient" emacsclient-path set-global
 
-IN: davec
-"davec: loaded" print
 
