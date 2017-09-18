@@ -1,7 +1,7 @@
 ! Copyright (C) 2011 PolyMicro Systems
 ! See http://factorcode.org/license.txt for BSD license.
 USING: accessors assocs editors.emacs math io kernel namespaces prettyprint
-sequences eval vocabs.parser ui.tools.listener ;
+system sequences eval vocabs.parser ui.tools.listener ;
 
 IN: vocabs
 : current-vocab-str ( -- str )
@@ -16,10 +16,9 @@ IN: prettyprint.config
 
 : decimal ( -- )
     10 number-base set ;    
-    
-! IN: syntax
-! SYNTAX: ." parse-string write ;
-
-"/Applications/Aquamacs.app/Contents/MacOS/bin/emacsclient" emacsclient-path set-global
+   
+os macosx? [
+    "/Applications/Aquamacs.app/Contents/MacOS/bin/emacsclient" emacsclient-path set-global
+] when
 
 
